@@ -16,20 +16,19 @@ names = data["Name"].tolist()
 
 pag.PAUSE = 0.5
 
-pag.keyDown("alt")
-pag.press("tab")
-pag.keyUp("alt")
+pag.hotkey("alt","tab")
 
 for i in range(len(contacts)):
+    val = str_utils.clean_string(names[i], str(contacts[i]))
     pag.hotkey("ctrl", "n")
     pag.write(
-        str_utils.clean_string(names[i], contacts[i]).get("contact"), interval=0.01
+        val.get("contact"), interval=0.01
     )
     pag.press("tab")
     pag.press("tab")
     pag.press("enter")
 
-    greeting = f"Hello {names[i]},"
+    greeting = f"Hello {val.get("name")},"
     message = (
         "How are you? This is an auto-generated message for you from Vishal Mobile."
     )
