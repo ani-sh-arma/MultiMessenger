@@ -1,8 +1,11 @@
 venv
 
-.xlsx
-.xls
-.xlsm
-.xlsb
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+
 __pycache__
 .vscode
+
+test.py
