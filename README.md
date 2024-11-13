@@ -30,7 +30,7 @@ A Python script that automates the process of sending a message to multiple cont
 2. Make sure your excel file is also in the same directory.
 3. Run the xcript using the following command/
 
-`python script.py <excel_file_name>`
+`python mulmess.py <excel_file_name>`
 
 Replace <excel_file_name> with the actual name of the Excel file containing the contact numbers and names.
 
@@ -46,9 +46,9 @@ Suppose you have an Excel file named "contacts.xlsx" with the following content:
 | +1 (555) 321-0987 | Sarah Lee   |
 | +1 (555) 789-2345 | Tom Wilson  |
 
-To run the script, save the script as "script.py" and run it as follows:
+To run the script :
 
-`python script.py contacts.xlsx`
+`python mulmess.py contacts.xlsx`
 
 This will open the Excel file, extract the contact numbers and names, and send a message to each contact.
 
